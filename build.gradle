@@ -20,17 +20,17 @@ buildscript {
     ext {
         // App SDK versions.
         compileSdkVersion = 28
-        minSdkVersion = 19
+        minSdkVersion = 21
         targetSdkVersion = 28
 
         // Dependency versions.
-        androidx_app_compat_version = '1.1.0-alpha05'
+        androidx_app_compat_version = '1.2.0-beta01'
         androidx_car_version = '1.0.0-alpha7'
-        androidx_core_ktx_version = '1.0.2'
-        androidx_media_version = '1.0.1'
-        androidx_preference_version = '1.0.0'
+        androidx_core_ktx_version = '1.2.0'
+        androidx_media_version = '1.1.0'
+        androidx_preference_version = '1.1.0'
         androidx_test_runner_version = '1.1.1'
-        arch_lifecycle_version = '2.0.0'
+        arch_lifecycle_version = '2.2.0'
         constraint_layout_version = '1.1.3'
         espresso_version = '3.1.1'
         exoplayer_version = '2.10.0'
@@ -42,7 +42,7 @@ buildscript {
         kotlin_version = '1.3.31'
         kotlin_coroutines_version = '1.1.0'
         play_services_auth_version = '17.0.0'
-        recycler_view_version = '1.0.0'
+        recycler_view_version = '1.1.0'
         robolectric_version = '4.2'
         test_runner_version = '1.1.0'
     }
@@ -50,6 +50,8 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
@@ -65,6 +67,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter/' }
     }
 }
 
